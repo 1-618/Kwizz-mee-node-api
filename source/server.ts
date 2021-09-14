@@ -1,9 +1,9 @@
 //Importing the dependencies we will need for this module
 import express from 'express';
-import config from './config/config';
+import dotenv from 'dotenv'
 import triviaRouter from "./routes/route";
 import morgan from 'morgan'
-
+dotenv.config()
 
 //Instantiate an express application by calling the express function
 const app = express();
