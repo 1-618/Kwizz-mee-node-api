@@ -22,6 +22,6 @@ app.use((req, res, next) => {
         message: error.message
     });
 });
-
+const port = process.env.PORT || 8084
 //listen for requests to our server
-app.listen(process.env.PORT);
+app.listen(port, () => `listening on port ${port}`);
