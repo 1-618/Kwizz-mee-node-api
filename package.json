@@ -1,14 +1,17 @@
 {
   "name": "api",
-  "version": "1.0.0",
-  "description": "",
+  "version": "14.15.1",
+  "description": "Quiz app back-end",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "source/server.ts",
   "scripts": {
     "start:dev": "nodemon",
     "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/server.js"
   },
-  "author": "",
+  "author": "Aryscene",
   "license": "ISC",
   "dependencies": {
     "@types/axios": "^0.14.0",
