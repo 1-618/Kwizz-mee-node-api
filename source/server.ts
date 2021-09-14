@@ -3,14 +3,16 @@ import express from 'express';
 import dotenv from 'dotenv'
 import triviaRouter from "./routes/route";
 import morgan from 'morgan'
+import cors from 'cors'
 dotenv.config()
 
 //Instantiate an express application by calling the express function
 const app = express();
 app.use(morgan("tiny"))
 
+//Apply middleware to incoming requests
+app.use(cors)
 app.use(triviaRouter)
-//Parse the body of the request
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
