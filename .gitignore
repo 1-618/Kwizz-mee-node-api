@@ -8,5 +8,5 @@ certs/**/*
 *.key
 *.mobileprovision
 *.orig.*
-
+*dist
 package-lock.json
