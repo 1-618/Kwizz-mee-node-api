@@ -24,4 +24,4 @@ app.use((req, res, next) => {
 });
 
 //listen for requests to our server
-app.listen(config.server);
+app.listen(process.env.PORT);

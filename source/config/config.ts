@@ -1,4 +1,4 @@
-//Import dependencies needed for this module
+/*Import dependencies needed for this module
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -12,4 +12,4 @@ const config = {
     host: SERVER_HOSTNAME
 };
 
-export default config;
+export default config;*/
