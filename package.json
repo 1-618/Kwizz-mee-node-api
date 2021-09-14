@@ -8,7 +8,7 @@
   "main": "source/server.ts",
   "scripts": {
     "start:dev": "nodemon",
-    "build": "./build && tsc",
+    "build": "rimraf ./build && tsc",
     "start": "npm run build && node build/server.js"
   },
   "author": "Aryscene",
