@@ -11,7 +11,7 @@ const app = express();
 app.use(morgan("tiny"))
 
 //Apply middleware to incoming requests
-app.use(cors)
+app.use(cors())
 app.use(triviaRouter)
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
