@@ -1,10 +1,6 @@
 {
   "name": "api",
   "version": "14.15.1",
-  "description": "Quiz app back-end",
-  "engines": {
-    "node": "14.x"
-  },
   "main": "dist/server.js",
   "scripts": {
     "start:dev": "nodemon",
